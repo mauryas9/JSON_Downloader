@@ -69,5 +69,6 @@ Station = st.sidebar.selectbox(
     'Select Station',
      recs[(recs['state']==State)].station.unique())
 filt_recs=recs[(recs['state']==State)&(recs['station']==Station)]
+st.write("Showing data for " + str(Station)+ ", " + str(State) +  " updated at "+ last_update.strftime("%m/%d/%Y, %H:%M") )
 st.table(filt_recs[['pollutant_id','pollutant_min','pollutant_avg','pollutant_max']])
 #st.write(tabulate(filt_recs[['pollutant_id','pollutant_min','pollutant_avg','pollutant_max']],headers=["Pollutant","Lowest\nValue","Average\nValue","Highest\nValue"],showindex=False))
