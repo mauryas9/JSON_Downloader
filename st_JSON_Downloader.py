@@ -1,10 +1,8 @@
-import numpy as np
 import pandas as pd
 import streamlit as st
 import requests
 import json
 import time
-from tabulate import tabulate
 from datetime import datetime
 
 st.title('Real Time Monitoring of Air Pollution')
